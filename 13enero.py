@@ -1,19 +1,27 @@
-#ciclo for
-n = int (input(" Digite cuántos valores ingresa el usuario"))
-sumaN = 0
-mayores10=0
+#ciclo for2 ejercicio
+print("Algoritmo doble ciclo para Secciones Empresa ")
+k = int (input("Digite la cantidad secciones empresa "))
 
-rango4 = range(1,n+1)
-for m in rango4:
-  print("Digite el número ", m)
-  numero = int (input())
-  sumaN = sumaN + numero
-  if (numero >= 10):
-    mayores10 = mayores10 + 1
+rangoS = range(1, k+1)
+
+totalF = 0
+
+for s in rangoS:
+  print(" Sección ", s)
+  m = int (input ("Digite la cantidad de Empleados "))
+  for emp in range(1, m+1):
+    print("Empleado ", emp, " de la sección ", s)
+    familiares = int (input("Digite cantidad familiares empleado "))
+    totalF = totalF + familiares
+
+print(" Total Familiares es  ", totalF)
+print(" Total Subsidio mes ", totalF * 15000)
+print("Total subsidio a medio año", totalF * 15000 * 6)
 
 
-print("La suma de los números es ", sumaN)
-print ("Total mayores o iguales que 10 son ", mayores10)
+
+
+
 
 
 
